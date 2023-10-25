@@ -4,6 +4,87 @@
 	box-sizing: border-box;
 }
 
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+
+.nav-right ul {
+	display: flex;
+	gap: 20px;
+	text-decoration: none;
+
+}
+
+.nav-right ul li {
+	list-style: none;
+
+} 
+
+.nav-right ul li a {
+	text-decoration: none;
+	color: black;
+	
+}
+
+
+
+#home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+
+#home p {
+	width: 50%;
+	padding: 20px;
+	line-height: 1.6;
+	
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+#duck {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.duck-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 45%;
+}
+
+#duck p {
+
+	line-height: 1.6;
+	width: 70%;
+	display: block;
+}
+
+.duck-image {
+	display: block;
+	align-self: center;
+	
+}
+
+
+.text {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
 #emergency {
 	display: flex;
 	flex-direction: column;
@@ -20,17 +101,31 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	width: 60%;
+	gap: 10px;
+	width: 40%; 
+	
 	margin-bottom: 2.5rem;
+	/* padding: 2rem; */
 }
 
 .grid-item {
-	width: 60%;
+	/* width: 60%; */
+	/* height: 60%; */
+	/* border: 1px solid black; */
+		
 }
 
-.grid-item a {
+.grid-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #000; /* Add a border to create the square appearance */
+    height: 0; /* Set the height to 0 to ensure the square shape */
+    padding: 50% 0; /* Set the padding to create a square shape (50% width and 50% height) */
 	text-decoration: none;
 }
+
 
 #contact {
 	display: flex;
@@ -55,7 +150,17 @@ a {
 	margin: 2rem;
 	padding: 2rem;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }
 
 
@@ -67,16 +172,41 @@ textarea {
 
 }
 
-label {
-	margin-top: 1px;
-	margin-bottom: 1px;
+input,
+textarea {
+	border-radius: 5px;
 }
 
-button {
-	display: block;
-	padding: 5px;
-	margin: 10px auto;
-	border-radius: 10px;
-	background-color: #7d0041;
-	color: #bbd2d1;
+
+label {
+   margin-top: 1px; 
+	margin-bottom: 1px;
+	
 }
+
+input {
+	width: 350px;
+	padding: 10px;
+	/* border-style: none; */
+
+}
+
+button{
+    display: block;
+    border: 1px solid #34D7DF;
+    background-color: transparent;
+    padding: 10px 30px;
+    margin-bottom: 2.5rem;
+	align-self: center;
+ }
+
+  button a {
+    color: #34D7DF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+ }
+
+ button a:hover{
+    color: white;
+ }

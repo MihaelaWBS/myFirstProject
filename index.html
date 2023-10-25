@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav>
+    <nav class="nav-container">
         <div class="nav-left">Logo</div>
             <div class="nav-right">
                 <ul>
@@ -24,17 +24,22 @@
     </header>
     <main>
         <section id="duck">
-            <div class="text">
-                <h2>Description of ducks</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quam nisi vel aliquam iure tempora ullam quas neque velit! Adipisci.</p>
+            <div class="duck-container">
+                <div class="text">
+                    <h2>Description of ducks</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed fugit ducimus est aut molestiae dolores voluptas inventore, numquam mollitia vitae, odio modi iure veniam quibusdam adipisci praesentium at ratione rem enim quasi in! Laborum nulla excepturi quod officiis, libero non in ut aut repellendus dignissimos, doloribus autem est quas.</p>
+    
+                </div>
 
             </div>
             <div class="duck-image">
-                <a href="#"><img src="https://lilalu-shop.com/media/image/35/9c/a5/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png" alt="photo of a duck"></a>
+               <img src="resources/2838883.jpg" alt="photo of a duck" width="450" height="500px">
 
             </div>
         </section>
-        <section id="emergency">
+
+    </main>  
+    <section id="emergency">
             <h2>In case of emergency:</h2>
             <div class="grid-container">
                 <a href="https://discordapp.com/channels/641221910146842644/641593560394760200"><div class="grid-item">Discord</div></a>
@@ -45,23 +50,23 @@
                 <a href="https://www.codenewbie.org/podcast"><div class="grid-item">Podcast</div></a>
             </div>
             
-        </section>
-    </main>
+    </section>
+    
     <footer id="contact">
         <h2>Contact us</h2>
         <div class="form-container">
 			<form>
 				
 					<label for="name">Name</label>
-					<input type="text" id="name" placeholder="name" required />
+					<input type="text" id="name" placeholder="Type your name" required />
 					<label for="age">Age</label>
-					<input type="number" id="age" placeholder="age" required />
+					<input type="number" id="age" placeholder="Choose your age" required />
 
 					<label for="email">Email</label>
-					<input type="email" id="email" placeholder="email" required />
+					<input type="email" id="email" placeholder="Type your email" required />
 
 					<label for="message">Message</label>
-					<textarea id="message" placeholder="message"></textarea>
+					<textarea id="message" placeholder="Type your message" cols="50" rows="7"></textarea>
 
 					<button type="submit">Submit</button>
 				
@@ -74,7 +79,7 @@
         </div>
         <a href="https://github.com/MihaelaWBS/myFirstProject.git"
                 ><img class="github" src="resources/github logo.png" alt="github-icon"
-            /></a>
+           width="100px" /></a>
     </footer>
     
 </body>
