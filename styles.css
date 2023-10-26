@@ -1,42 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto&display=swap");
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: Poppins;
+}
+
+h1, h2 {
+	color: #0B2447;
+}
+
 .nav-container {
 	display: flex;
 	justify-content: space-between;
-	padding: 2rem;
+	padding: 1rem;
+	background-color:#0B2447;
+}
+
+.nav-left {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+
+
+.nav-left p {
+
+	font-family: Poppins;
+	font-weight: 200;
+	display: flex;
+	align-self: center;
+	font-size: 1.5rem;
+	color: #D3DEDC;
+
 }
 
 .nav-right ul {
 	display: flex;
-	gap: 20px;
+	gap: 40px;
 	text-decoration: none;
+	padding: 1.5rem;
+	align-self: center;
 
 }
 
 .nav-right ul li {
 	list-style: none;
+	transition: transform 0.2s;
 
 } 
 
+.nav-right ul li:hover {
+	transform: scale(1.2);
+}
+
+
 .nav-right ul li a {
 	text-decoration: none;
-	color: black;
+	color: #D3DEDC;
+	font-weight: 600;
+	
+	
+}
+
+.nav-right ul li a:hover {
+	color: #FFC436;
 	
 }
 
 
 
-#home {
+ #home { 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem;
-}
+	padding: 10rem;
+
+} 
+
+
+
+
+
 
 #home p {
 	width: 50%;
@@ -45,12 +100,13 @@
 	
 }
 
-main {
-	display: flex;
-	justify-content: space-around;
+h1{
+
+	font-size: 3rem;
 }
 
 
+/*  
 #duck {
 	display: flex;
 	justify-content: space-around;
@@ -62,6 +118,18 @@ main {
 	flex-direction: column;
 	align-items: center;
 	max-width: 45%;
+}*/
+
+main {
+	width: 100vw;
+
+}
+
+#duck {
+	padding: 2rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 #duck p {
@@ -69,6 +137,7 @@ main {
 	line-height: 1.6;
 	width: 70%;
 	display: block;
+	padding: 20px;
 }
 
 .duck-image {
@@ -103,7 +172,6 @@ main {
 	grid-template-rows: 1fr 1fr;
 	gap: 10px;
 	width: 40%; 
-	
 	margin-bottom: 2.5rem;
 	/* padding: 2rem; */
 }
@@ -124,7 +192,18 @@ main {
     height: 0; /* Set the height to 0 to ensure the square shape */
     padding: 50% 0; /* Set the padding to create a square shape (50% width and 50% height) */
 	text-decoration: none;
+	font-weight: 600;
+	background-color: #FCF5ED;
 }
+
+.grid-container img {
+	transition: transform 0.2s;
+ }
+
+ .grid-container img:hover {
+	transform: scale(1.2);
+ }
+
 
 
 #contact {
@@ -132,6 +211,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	padding: 2rem;
+	background-color: #D3DEDC;
 }
 
 #contact h2,
@@ -144,6 +224,7 @@ a {
 #contact a {
 	text-decoration: none;
 	list-style: none;
+	font-weight: 600;
 }
 
 .form-container {
@@ -153,7 +234,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
+	
 }
 
 form {
@@ -180,7 +261,10 @@ textarea {
 
 label {
    margin-top: 1px; 
-	margin-bottom: 1px;
+    margin-bottom: 1px;
+	color: #0B2447;
+	font-weight: 600;
+	font-family: Poppins;
 	
 }
 
@@ -188,9 +272,12 @@ input {
 	width: 350px;
 	padding: 10px;
 	/* border-style: none; */
+	
 
 }
 
+
+/*  
 button{
     display: block;
     border: 1px solid #34D7DF;
@@ -210,3 +297,42 @@ button{
  button a:hover{
     color: white;
  }
+
+ */
+
+ .button {
+	height: 50px;
+	width: 200px;
+	position: relative;
+	background-color: #0B2447;
+	cursor: pointer;
+	border: 2px solid #0B2447;
+	overflow: hidden;
+	border-radius: 30px;
+	color:  #D3DEDC;
+	transition: transform 0.2s;
+	margin-top: 2rem;
+	
+  }
+
+  .button:hover {
+	background-color: #FFC436;
+	color: #0B2447;
+	border: 2px solid #FFC436;
+	transform: scale(1.1);
+ }
+  
+  .btn-txt {
+	
+	font-weight: 600;
+	letter-spacing: 4px;
+	font-family: Poppins;
+	transition: transform 0.2s
+  }
+  .btn-txt {
+	transform: scale(1.2);
+
+  }
+  
+
+ 

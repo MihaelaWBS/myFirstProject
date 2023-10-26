@@ -8,7 +8,10 @@
 </head>
 <body>
     <nav class="nav-container">
-        <div class="nav-left">Logo</div>
+        <div class="nav-left">
+           <img src="resources/logo_Mihaela-removebg-preview.png" alt="logo";>
+           <p>Duckies</p>
+        </div>
             <div class="nav-right">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -24,34 +27,30 @@
     </header>
     <main>
         <section id="duck">
-            <div class="duck-container">
-                <div class="text">
+            
+                <div class="grid-item text">
                     <h2>Description of ducks</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed fugit ducimus est aut molestiae dolores voluptas inventore, numquam mollitia vitae, odio modi iure veniam quibusdam adipisci praesentium at ratione rem enim quasi in! Laborum nulla excepturi quod officiis, libero non in ut aut repellendus dignissimos, doloribus autem est quas.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis molestiae est ratione eos tenetur! Pariatur eos dolorum consequatur veritatis laborum obcaecati animi voluptatem, error exercitationem quasi debitis esse iure beatae odit totam perferendis doloribus possimus iusto reprehenderit aut atque assumenda ea molestias. Impedit est officia enim dolorum sit dicta. Totam ad, animi, dolore magnam iste est laborum nesciunt amet autem id temporibus vitae vel adipisci minus, libero accusantium necessitatibus nulla consequuntur? Pariatur optio suscipit ipsum ullam maxime, molestias aliquam deleniti ratione cupiditate, qui impedit ad repudiandae doloremque facilis neque, est cum debitis exercitationem hic sapiente itaque eaque. Nesciunt, doloribus? </p>
     
                 </div>
-
-            </div>
-            <div class="duck-image">
-               <img src="resources/2838883.jpg" alt="photo of a duck" width="450" height="500px">
+            <div class="grid-item duck-image">
+               <img src="resources/2150701941(1).jpg" alt="photo of a duck" width="600" height="400px">
 
             </div>
         </section>
-
+        <section id="emergency">
+                <h2>In case of emergency:</h2>
+                <div class="grid-container">
+                    <a href="https://discordapp.com/channels/641221910146842644/641593560394760200"><div class="grid-item"><img src="resources/icons8-discord.svg" alt="discord"></div></a>
+                    <a href="https://stackoverflow.com/"><div class="grid-item"><img src="resources/icons8-stack-overflow.svg" alt="stack overflow"></div></a>
+                    <a href="https://developer.mozilla.org"><div class="grid-item"><img src="resources/icons8-firefox-a-free-and-open-source-web-browser-developed-by-the-mozilla-foundation-96.png" alt="mozilla"></div></a>
+                    <a href="https://www.w3schools.com/"><div class="grid-item"><img src="resources/w3schools.svg" alt="w3schools"></div></a>
+                    <a href="https://medium.com/"><div class="grid-item"><img src="resources/icons8-medium.svg" alt="medium"></div></a>
+                    <a href="https://www.codenewbie.org/podcast"><div class="grid-item"><img src="resources/icons8-podcast-96.png" alt="podcast"></div></a>
+                </div>
+                
+        </section>
     </main>  
-    <section id="emergency">
-            <h2>In case of emergency:</h2>
-            <div class="grid-container">
-                <a href="https://discordapp.com/channels/641221910146842644/641593560394760200"><div class="grid-item">Discord</div></a>
-                <a href="https://stackoverflow.com/"><div class="grid-item">Stack Overflow</div></a>
-                <a href="https://developer.mozilla.org"><div class="grid-item">MDN</div></a>
-                <a href="https://www.w3schools.com/"><div class="grid-item">W3</div></a>
-                <a href="https://medium.com/"><div class="grid-item">Medium</div></a>
-                <a href="https://www.codenewbie.org/podcast"><div class="grid-item">Podcast</div></a>
-            </div>
-            
-    </section>
-    
     <footer id="contact">
         <h2>Contact us</h2>
         <div class="form-container">
@@ -68,7 +67,9 @@
 					<label for="message">Message</label>
 					<textarea id="message" placeholder="Type your message" cols="50" rows="7"></textarea>
 
-					<button type="submit">Submit</button>
+					<button class="button type1">
+                        <span class="btn-txt">Submit</span>
+                      </button>
 				
 			</form>
 		</div>
